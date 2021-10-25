@@ -28,6 +28,7 @@
   "dependencies": {
     "browserslist": "^4.17.5",
     "caniuse-lite": "^1.0.30001271",
+    "lodash.throttle": "^4.1.1",
     "simplelightbox": "^2.9.0"
   }
 }
