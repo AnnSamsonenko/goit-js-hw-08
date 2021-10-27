@@ -25,12 +25,15 @@ function getSavedFormData() {
 
   if (savedFormData) {
     refs.textarea.value = savedFormData.message;
+    formData.message = savedFormData.message;
     refs.input.value = savedFormData.email;
+    formData.email = savedFormData.email;
   }
 }
 
 function onFormSubmit(event) {
   event.preventDefault();
+  console.log(formData);
   event.currentTarget.reset();
   localStorage.removeItem(STORAGE_KEY);
 }
